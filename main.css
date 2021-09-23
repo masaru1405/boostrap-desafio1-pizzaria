@@ -1,6 +1,39 @@
+header {
+   background-color: #f37520;
+}
+
+header, header > .container {
+   min-height: 64px;
+}
+
+ul.list-inline {
+   color: #eaeaea;
+}
+
+section nav {
+   background-color: #ededed;
+   padding: 2rem;
+}
+
+footer {
+   background-color: #454545;
+   padding: 2rem;
+   color: #eaeaea;
+}
+
 ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
+}
+
+@media (min-width: 576px){
+   section,
+   section > .row,
+   section > .row > [class^=col-],
+   section > .row nav
+   {
+      height: calc(100vh - 272px);
+   }
 }
 
